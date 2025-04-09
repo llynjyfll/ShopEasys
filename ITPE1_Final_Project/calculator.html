@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    #display {
+      margin: 20px auto;
+      padding: 10px;
+      width: 80%;
+      font-size: 20px;
+      color: #333;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      resize: vertical; /* Allow vertical resizing */
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .button {
+      padding: 23px;
+      font-size: 16px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    .button-numeric {
+      background-color: #4CAF50; /* Green */
+    }
+
+    .button-operator {
+      background-color: #f44336; /* Red */
+      text-align: left;
+    }
+
+    .button-special {
+      background-color: #2196F3; /* Blue */
+    }
+  </style>
+</head>
+<body>
+  <h2>Calculator</h2>
+  <textarea id="display" readonly></textarea>
+  <div class="calculator">
+    <input type="button" class="button button-special" value="C" onclick="clearDisplay()">
+    <input type="button" class="button button-special" value="Del" onclick="deleteLastCharacter()">
+    <input type="button" class="button button-special" value="√" onclick="appendToDisplay('√')">
+    <input type="button" class="button button-operator" value="+" onclick="appendToDisplay('+')">
+
+    <input type="button" class="button button-numeric" value="7" onclick="appendToDisplay('7')">
+    <input type="button" class="button button-numeric" value="8" onclick="appendToDisplay('8')">
+    <input type="button" class="button button-numeric" value="9" onclick="appendToDisplay('9')">
+    <input type="button" class="button button-operator" value="-" onclick="appendToDisplay('-')">
+
+    <input type="button" class="button button-numeric" value="4" onclick="appendToDisplay('4')">
+    <input type="button" class="button button-numeric" value="5" onclick="appendToDisplay('5')">
+    <input type="button" class="button button-numeric" value="6" onclick="appendToDisplay('6')">
+    <input type="button" class="button button-operator" value="" onclick="appendToDisplay('')">
+
+    <input type="button" class="button button-numeric" value="1" onclick="appendToDisplay('1')">
+    <input type="button" class="button button-numeric" value="2" onclick="appendToDisplay('2')">
+    <input type="button" class="button button-numeric" value="3" onclick="appendToDisplay('3')">
+    <input type="button" class="button button-operator" value="/" onclick="appendToDisplay('/')">
+
+    <input type="button" class="button button-numeric" value="0" onclick="appendToDisplay('0')">
+    <input type="button" class="button button-special" value="⚠️" onclick="displayWelcomeMessage()">
+    <input type="button" class="button button-operator" value="." onclick="appendToDisplay('.')">
+    <input type="button" class="button button-operator" value="=" onclick="showLoveMessage()">
+  </div>
+
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById('display').value = '';
+    }
+
+    function deleteLastCharacter() {
+      let displayValue = document.getElementById('display').value;
+      document.getElementById('display').value = displayValue.slice(0, -1);
+    }
+
+    function showLoveMessage() {
+      const expression = document.getElementById('display').value;
+      let loveMessage = '';
+
+      if (expression.includes('+')) {
+        loveMessage = "Mahal kita kahit kaibigan lang ang turing mo sa akin 💕💕💕";
+      } else if (expression.includes('-')) {
+        loveMessage = "Asahan mong andito ako lagi para sa'yo 🦆🦆";
+      } else if (expression.includes('*')) {
+        loveMessage = "Hihintayin kita kung kailan handa kana 🎶🎶";
+      } else if (expression.includes('/')) {
+        loveMessage = "Hindi ako susuko sa'yo, hanggat wala ka pang iba 😅😅";
+      } else {
+        loveMessage = "Invalid operation";
+      }
+
+      document.getElementById('display').value = loveMessage;
+      document.getElementById('display').style.height = (loveMessage.split('\n').length * 50) + 'px'; // Adjust height based on the number of lines
+    }
+
+    function displayWelcomeMessage() {
+      document.getElementById('display').value = "I Love You ❣️❣️❣️";
+    }
+  </script>
+</body>
+</html>

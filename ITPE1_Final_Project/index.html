@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                
+                <a href="account.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <div class="cart-icon">
+                    <a href="cart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero" style="background-image: url('cicici.jpg'); background-size: cover; height: 50vh; width: 100%;">
+        <div class="container" >
+            <div class="hero-content">         
+                <h2>Shop Easy</h2>
+                <p>Discover the latest trends and exclusive deals</p>
+                <a href="product.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="elecBG2.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                    <a href="categories.html" class="btn-secondary">View Products</a>
+                </div>
+                <div class="category-card">
+                    <img src="FASHION BG2.jpg" alt="Clothing">
+                    <h3>Clothing</h3>
+                    <a href="categories.html" class="btn-secondary">View Products</a>
+                </div>
+                <div class="category-card">
+                    <img src="HOME BG.jpg" alt="Home & Kitchen">
+                    <h3>Home & Kitchen</h3>
+                    <a href="categories.html" class="btn-secondary">View Products</a>
+                </div>
+                <div class="category-card">
+                    <img src="CARE BG.jpg" alt="Beauty">
+                    <h3>Beauty</h3>
+                    <a href="categories.html" class="btn-secondary">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-price="299.99" data-name="Wireless Headphones">
+                    <div class="product-badge">New</div>
+                    <img src="headphones.jpg" alt="Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.4k)</span>
+                    </div>
+                    <p class="product-price">₱299.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="2" data-price="49.99" data-name="Smart Watch Band">
+                    <img src="SMARTWATCH.jpg" alt="Smart Watch Band">
+                    <h3>Smart Watch Band</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(1.7k)</span>
+                    </div>
+                    <p class="product-price">₱49.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="3" data-price="199.99" data-name="Portable Bluetooth Speaker">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="WIRELESS BT.jpg" alt="Portable Bluetooth Speaker">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(899)</span>
+                    </div>
+                    <p class="product-price"><span class="original-price">₱249.99</span> ₱199.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="4" data-price="899.99" data-name="Smartphone Pro">
+                    <img src="PHONE.jpg" alt="Smartphone Pro">
+                    <h3>Smartphone Pro</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(1.1k)</span>
+                    </div>
+                    <p class="product-price">₱899.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="product.html" class="btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offers" style="background-image: url('discount.jpg'); background-size: cover; height: vh; width: 100%;">
+        <div class="container">
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <h2>Special Offer</h2>
+                    <p>Get 20% off on all electronics this week!</p>
+                    <a href="product.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new products and exclusive offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="product.html">All Products</a></li>
+                        <li><a href="categories.html">Electronics</a></li>
+                        <li><a href="categories.html">Clothing</a></li>
+                        <li><a href="categories.html">Home & Kitchen</a></li>
+                        <li><a href="categories.html">Beauty</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li>Contact Us</li>
+                        <lI>0909-745-6155</li>
+                        <li>ShopEasy@email.com</li>
+                        <li>123 Main Street, Suite 400
+                            Anytown, CA 91234
+                            pilipins</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Developer</h3>
+                    <ul>
+                        <li>Allyn Joy Fullo</li>
+                        <li>Diojeh Mer Villaluna</li>
+                        <li>Jhon Khyle Paduala</li>
+                        <li>Rovien Jude Munion</li>
+                        <li>Francis CJ Dayaday</li>
+                        
+                
+                        
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Shopping Cart</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total-price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="continue-shopping" class="btn-secondary">Continue Shopping</button>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

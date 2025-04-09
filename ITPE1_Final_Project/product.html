@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ShopEasy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                
+                <a href="account.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <div class="cart-icon">
+                    <a href="cart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>All Products</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Products
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Row 1 -->
+                <div class="product-card" data-id="1" data-price="299.99" data-name="Wireless Headphones">
+                    <div class="product-badge">New</div>
+                    <img src="headphones.jpg" alt="Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.4k)</span>
+                    </div>
+                    <p class="product-price">₱299.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="2" data-price="49.99" data-name="Smart Watch Band">
+                    <img src="SMARTWATCH.jpg" alt="Smart Watch Band">
+                    <h3>Smart Watch Band</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(1.7k)</span>
+                    </div>
+                    <p class="product-price">₱49.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="3" data-price="199.99" data-name="Portable Bluetooth Speaker">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="WIRELESS BT.jpg" alt="Portable Bluetooth Speaker">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(899)</span>
+                    </div>
+                    <p class="product-price"><span class="original-price">₱249.99</span> ₱199.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="4" data-price="899.99" data-name="Smartphone Pro">
+                    <img src="PHONE.jpg" alt="Smartphone Pro">
+                    <h3>Smartphone Pro</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(1.1k)</span>
+                    </div>
+                    <p class="product-price">₱899.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                
+                
+
+                <!-- Row 2 -->
+                <div class="product-card" data-id="5" data-price="129.99" data-name="Pulo Shirt for Men">
+                    <img src="PULO.jpg" alt="Pulo Shirt for Men">
+                    <h3>Pulo Shirt for men</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(5.1k)</span>
+                    </div>
+                    <p class="product-price">₱129.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="6" data-price="599.99" data-name="Sunday Dress">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="DRESS2.jpg" alt="Sunday Dress">
+                    <h3>Sunday Dress"</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(7.1k)</span>
+                    </div>
+                    <p class="product-price"><span class="original-price">₱699.99</span> ₱599.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="7" data-price="79.99" data-name="Running Shoes">
+                    <div class="product-badge">New</div>
+                    <img src="SHOES.jpg" alt="Running Shoes">
+                    <h3>Running Shoes</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(849)</span>
+                    </div>
+                    <p class="product-price">₱79.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="8" data-price="349.99" data-name="Accessories">
+                    <img src="ACC3.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(879)</span>
+                    </div>
+                    <p class="product-price">₱349.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Row 1 -->
+                <div class="product-card" data-id="1" data-price="299.99" data-name="Furnitures">
+                    <div class="product-badge">New</div>
+                    <img src="FUR.jpg" alt="Furnitures">
+                    <h3>Furnitures</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(644)</span>
+                    </div>
+                    <p class="product-price">₱299.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="2" data-price="49.99" data-name="Kitchen Appliances">
+                    <img src="APPL1.jpg" alt="Kitchen Appliances">
+                    <h3>Kitchen Appliances</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(729)</span>
+                    </div>
+                    <p class="product-price">₱49.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="3" data-price="199.99" data-name="Home Decor">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="DECOR4.jpg" alt="Home Decor">
+                    <h3>Home Decor</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1.2k)</span>
+                    </div>
+                    <p class="product-price"><span class="original-price">₱249.99</span> ₱199.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="4" data-price="899.99" data-name="Beddings">
+                    <img src="BED2.jpg" alt="Beddings">
+                    <h3>Beddings</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(1.1k)</span>
+                    </div>
+                    <p class="product-price">₱899.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                
+                
+
+                <!-- Row 2 -->
+                <div class="product-card" data-id="5" data-price="129.99" data-name="Skin Care">
+                    <img src="SKIN.jpg" alt="Skin Care">
+                    <h3>Skin Care</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(1.5k)</span>
+                    </div>
+                    <p class="product-price">₱129.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="6" data-price="599.99" data-name="Make Up">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="MAKE3.jpg" alt="Make Up">
+                    <h3>Make Up"</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(7.2k)</span>
+                    </div>
+                    <p class="product-price"><span class="original-price">₱699.99</span> ₱599.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="7" data-price="79.99" data-name="Perfume">
+                    <div class="product-badge">New</div>
+                    <img src="perfume.jpg" alt="Perfume">
+                    <h3>Perfume</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(2.3k)</span>
+                    </div>
+                    <p class="product-price">₱79.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-id="8" data-price="349.99" data-name="Hair Care">
+                    <img src="HAIR.jpg" alt="Hair Care">
+                    <h3>Hair Care</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(1.1k)</span>
+                    </div>
+                    <p class="product-price">₱349.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+            
+        </div>
+        
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new products and exclusive offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="product.html">All Products</a></li>
+                        <li><a href="categories.html">Electronics</a></li>
+                        <li><a href="categories.html">Clothing</a></li>
+                        <li><a href="categories.html">Home & Kitchen</a></li>
+                        <li><a href="categories.html">Beauty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li>Contact Us
+                            
+                            
+                            </li>
+                        <lI>0909-745-6155</li>
+                        <li>ShopEasy@email.com</li>
+                        <li>123 Main Street, Suite 400 Anytown, CA 91234 pilipins</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Developer</h3>
+                    <ul>
+                        <li>Allyn Joy Fullo</li>
+                        <li> Diojeh Mer Villaluna</li>
+                        <li>Jhon Khyle Paduala</li>
+                        <li>Rovien Jude Munion</li>
+                        <li>Francis CJ Dayaday</li>
+                        
+                
+                        
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Shopping Cart</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total-price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="continue-shopping" class="btn-secondary">Continue Shopping</button>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
